@@ -1,0 +1,35 @@
+SISTEMA DE OPTIMIZACION DE RUTAS PARA ENTREGA DE PEDIDOS
+
+ARCHIVOS
+- Main.java: solicita cliente y destino y presenta los resultados.
+- Grafo.java: representa las ubicaciones y conexiones dirigidas.
+- Dijkstra.java: calcula rutas minimas desde la bodega.
+- ResultadoDijkstra.java: almacena los resultados de Dijkstra.
+- FloydWarshall.java: calcula rutas minimas entre todos los pares.
+- ResultadoFloydWarshall.java: almacena matrices, rutas y actualizaciones.
+
+REQUISITOS
+- JDK instalado (Java 17 o posterior recomendado).
+- Visual Studio Code con Extension Pack for Java.
+
+EJECUCION DESDE LA TERMINAL
+1. Abra la carpeta que contiene los seis archivos .java.
+2. Abra Terminal > New Terminal.
+3. Compile: javac *.java
+4. Ejecute: java Main
+
+MODELO DEL GRAFO
+0 Bodega Central
+1 Teusaquillo
+2 Chapinero
+3 Centro
+4 Usaquen
+
+Los pesos de las conexiones son tiempos hipoteticos en minutos. El grafo es
+DIRIGIDO: una conexion A -> B no implica automaticamente B -> A. Para agregar
+una ruta de regreso, agregue otra llamada a agregarArista.
+
+NOTA
+Es una simulacion academica. No consulta mapas, distancias geograficas ni trafico
+real. Para la ejecucion interactiva, el programa registra un pedido de ejemplo
+con identificador PED-001 y calcula la ruta al destino seleccionado.

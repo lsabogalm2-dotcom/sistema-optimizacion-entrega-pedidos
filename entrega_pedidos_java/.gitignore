@@ -1,0 +1,9 @@
+
+# Archivos compilados de Java
+*.class
+
+# Configuración de Visual Studio Code
+.vscode/
+
+# Archivos temporales
+*.log
